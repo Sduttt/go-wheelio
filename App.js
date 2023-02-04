@@ -74,3 +74,9 @@ $(document).ready(function () {
     carquery.search();
   });
 });
+
+
+
+document.getElementById("whatsapp-btn").addEventListener("click", function() {
+  window.location.href = "https://api.whatsapp.com/send?phone=1234567890&text=Hello%20there%21";
+});

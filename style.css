@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: Arial, sans-serif;
-  padding: 40px;
+  padding: 0px;
   background-color: #f2f2f2;
 }
-
+.hero{
+  margin: 0 20px;
+}
 select,
 input[type="text"],
 input[type="button"] {
@@ -58,10 +65,119 @@ input[type="button"]:hover {
   transform: translateY(-2px);
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
 }
+.top{
+  display: flex;
+  flex-direction: column;
+  background: #4CAF50;
+  padding: 0 30px;
+  margin-bottom: 40px;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+
+}
+.twilioForm{
+  margin: 0 auto ;
+}
+#number{
+  width: 400px;
+  padding: 20px;
+  font-size: 18px;
+  margin-bottom: 40px;
+  border: 2px solid #4CAF50;
+  border-radius: 10px;
+  -webkit-appearance: none;
+  box-shadow: 2px 2px 8px rgb(0 0 0 / 10%);
+}
+.twiliobtn{
+  /* width: 400px; */
+  padding: 20px 30px;
+  font-size: 18px;
+  margin-bottom: 40px;
+  border: 2px solid #4CAF50;
+  background-color: #565FA1;
+  color: #FFF;
+  font-weight: bold;
+  border-radius: 10px;
+  -webkit-appearance: none;
+  box-shadow: 2px 2px 8px rgb(0 0 0 / 10%);
+}
+.top-heading{
+  margin: 10px auto;
+  font-family: 'Itim', cursive;
+  color: #fff;
+  font-weight: bold;
+  font-size: 50px;
+}
+.logo{
+  width: 200px;
+}
+.github{
+  width: 100px;
+}
 
 .scrollable  ul  li{
-  color: black;
+
   font-size: 17px;
   padding: 2px;
   list-style-type: none;
 }
+
+.scrollable  ul  li a{
+  color: #565FA1;
+  text-decoration: none;
+  font-family: 'Itim', cursive;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  background-color: #565FA1;
+  border-radius: 12px;
+  color: #eee;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0A66C2;
+  
+  border-radius: 5px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.names{
+  margin-left: 5px;
+}
+.item-heading{
+  text-align: center;
+  font-family: 'Itim', cursive;
+  font-size: 35px;
+
+}
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+ #cq-search-results .scrollable ul li{
+  list-style: decimal;
+ }
+
