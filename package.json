@@ -1,0 +1,31 @@
+{
+  "name": "mlh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon App.js start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sduttt/carQuery.git"
+  },
+  "keywords": [
+    "wheelio"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sduttt/carQuery/issues"
+  },
+  "homepage": "https://github.com/Sduttt/carQuery#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "twilio": "^3.84.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
