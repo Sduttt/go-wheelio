@@ -1,165 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css" />
-    <script
-      type="text/javascript"
-      src="http://www.carqueryapi.com/js/jquery.min.js"></script>
-    <script
-      type="text/javascript"
-      src="http://www.carqueryapi.com/js/carquery.0.3.4.js"></script>
-    <title>Go Wheelio</title>
-  </head>
-  <body>
-    <div class="top">
-      <nav class="">
-        <div class="dropdown">
-          <button class="dropdown-btn">Connect With Developers</button>
-          <div class="dropdown-content">
-            <a href="https://www.linkedin.com/in/subham-dutta-8670b8178/">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path fill="#fff" d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v2.765c1.396-2.586 7-2.777 7 2.476V19z"/>
-              </svg>              
-              <span class="names">Subham Dutta</span></a>
-            <a href="https://www.linkedin.com/in/aakanksha-rangdal">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path fill="#fff" d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v2.765c1.396-2.586 7-2.777 7 2.476V19z"/>
-              </svg>   <span class="names">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="text/javascript" src="http://www.carqueryapi.com/js/jquery.min.js"></script>
+  <script type="text/javascript" src="http://www.carqueryapi.com/js/carquery.0.3.4.js"></script>
+  <title>Go Wheelio</title>
+</head>
+
+<body>
+  <div class="top">
+    <nav class="">
+      <div class="dropdown">
+        <button class="dropdown-btn">Connect With Developers</button>
+        <div class="dropdown-content">
+          <a href="https://www.linkedin.com/in/subham-dutta-8670b8178/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="#fff"
+                d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v2.765c1.396-2.586 7-2.777 7 2.476V19z" />
+            </svg>
+            <span class="names">Subham Dutta</span></a>
+          <a href="https://www.linkedin.com/in/aakanksha-rangdal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="#fff"
+                d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v2.765c1.396-2.586 7-2.777 7 2.476V19z" />
+            </svg> <span class="names">
               Aakanksha Rangdal</span></a>
-            <a href="https://www.linkedin.com/in/sunanda-samanta-047ba519b/">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path fill="#fff" d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v2.765c1.396-2.586 7-2.777 7 2.476V19z"/>
-              </svg>   <span class="names">
+          <a href="https://www.linkedin.com/in/sunanda-samanta-047ba519b/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="#fff"
+                d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v2.765c1.396-2.586 7-2.777 7 2.476V19z" />
+            </svg> <span class="names">
               Sunanda Samanta</span></a>
-            <a href="https://www.linkedin.com/in/im45145v/">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path fill="#fff" d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v2.765c1.396-2.586 7-2.777 7 2.476V19z"/>
-              </svg>   <span class="names">
+          <a href="https://www.linkedin.com/in/im45145v/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="#fff"
+                d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v2.765c1.396-2.586 7-2.777 7 2.476V19z" />
+            </svg> <span class="names">
               Malla Venkata Sai Ashish</span></a>
-          </div>
-        </div>
-        <img src="img/Final Logo.png" alt="Logo" class="logo" />
-        <a
-          href="https://github.com/Sduttt/carQuery"
-          target="_blank"
-          rel="noopener noreferrer">
-          <img src="img/icons8-github-50.png" alt="Logo" class="github" />
-        </a>
-      </nav>
-      <h1 class="top-heading">Subscribe To Our Newsletter</h1>
-      <form action="" method="get" class="twilioForm">
-        <input
-          type="tel"
-          name="Contact Number"
-          id="number"
-          placeholder="Enter your contact Number.." />
-        <button class="twiliobtn">Submit</button>
-      </form>
-    </div>
-    <div class="hero">
-      <select name="car-years" id="car-years"></select>
-      <select name="car-makes" id="car-makes"></select>
-      <select name="car-models" id="car-models"></select>
-      <select name="car-model-trims" id="car-model-trims"></select>
-      <input id="cq-show-data" type="button" value="Show Data" />
-      <div id="car-model-data"></div>
-      <h1 class="item-heading">Search from the list:</h1>
-      <table>
-        <tr>
-          <td valign="top"><div id="make-list" /></td>
-          <td valign="top"><div id="model-list" /></td>
-          <td valign="top"><div id="trim-list" /></td>
-        </tr>
-        <tr>
-          <td colspan="3"><div id="trim-data-list" /></td>
-        </tr>
-      </table>
-      <h1 class="item-heading" style="margin-bottom: 20px;">Search by criteria:</h1>
-      <div id="cq-search-controls">
-        <div style="float: left; width: 300px">
-          <fieldset>
-            <center>
-              <input type="button" id="cq-search-btn" value="Search Cars" />
-            </center>
-            <hr />
-            Keyword: <input id="cq-search-input" type="text" />
-            <hr />
-            Year Range:
-            <select id="cq-min-year"></select>
-            to
-            <select id="cq-max-year"></select>
-            <br />
-            <hr />
-            <input
-              id="cq-sold-in-us"
-              name="us-only-filter"
-              type="checkbox" /><label for="us-only-filter"
-              >Show Only US Models</label
-            >
-            <br />
-            <hr />
-            Engine Position:
-            <select id="cq-engine-position"></select>
-            <br />
-            <hr />
-            Engine Type:
-            <select id="cq-engine-type"></select>
-            <br />
-            <hr />
-            Engine Cylinders:
-            <select id="cq-min-cylinders"></select>
-            to
-            <select id="cq-max-cylinders"></select>
-            <br />
-            <hr />
-            Engine Power (hp):
-            <input type="text" id="cq-min-power" style="width: 30px" /> to
-            <input type="text" id="cq-max-power" style="width: 30px" /> <br />
-            <hr />
-            Engine Torque (lb-ft):
-            <input type="text" id="cq-min-torque" style="width: 30px" /> to
-            <input type="text" id="cq-max-torque" style="width: 30px" /> <br />
-            <hr />
-            Engine Fuel Type:
-            <select id="cq-fuel-type"></select>
-            <br />
-            <hr />
-            Top Speed (mph):
-            <input type="text" id="cq-min-top-speed" style="width: 30px" /> to
-            <input type="text" id="cq-max-top-speed" style="width: 30px" />
-            <br />
-            <hr />
-            Drivetrain:
-            <select id="cq-drive"></select>
-            <br />
-            <hr />
-            Seats:
-            <select id="cq-seats"></select>
-            <br />
-            <hr />
-            Doors:
-            <select id="cq-doors"></select>
-            <br />
-            <hr />
-            Weight (lbs):
-            <input type="text" id="cq-min-weight" style="width: 30px" /> to
-            <input type="text" id="cq-max-weight" style="width: 30px" />
-          </fieldset>
-        </div>
-        <div style="float: right; width: 50%">
-          <fieldset>
-            <div id="cq-search-results">Search Results:</div>
-          </fieldset>
         </div>
       </div>
+      <a href="/">
+        <img src="img/Final Logo.png" alt="Logo" class="logo" />
+      </a>
+      <a href="https://github.com/Sduttt/carQuery" target="_blank" rel="noopener noreferrer">
+        <img src="img/icons8-github-50.png" alt="Logo" class="github" />
+      </a>
+    </nav>
+    <h1 class="top-heading">Subscribe To Our Newsletter</h1>
+    <form action="http://localhost:3000/" id="twilioForm" class="twilioForm" method="post">
+      <input type="tel" name="contactNumber" id="number" placeholder="Enter your contact Number.." minlength="10" ,
+        maxlength="10" />
+      <button id="submit" type="submit" class="twiliobtn">Submit</button>
+    </form>
 
-      <div id="cq-search-result" style="display: none"></div>
+  </div>
+  <div class="hero">
+    <select name="car-years" id="car-years"></select>
+    <select name="car-makes" id="car-makes"></select>
+    <select name="car-models" id="car-models"></select>
+    <select name="car-model-trims" id="car-model-trims"></select>
+    <input id="cq-show-data" type="button" value="Show Data" />
+    <div id="car-model-data"></div>
+    <h1 class="item-heading">Search from the list:</h1>
+    <table>
+      <tr>
+        <td valign="top">
+          <div id="make-list" />
+        </td>
+        <td valign="top">
+          <div id="model-list" />
+        </td>
+        <td valign="top">
+          <div id="trim-list" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <div id="trim-data-list" />
+        </td>
+      </tr>
+    </table>
+    <h1 class="item-heading" style="margin-bottom: 20px;">Search by criteria:</h1>
+    <div id="cq-search-controls">
+      <div style="float: left; width: 300px">
+        <fieldset>
+          <center>
+            <input type="button" id="cq-search-btn" value="Search Cars" />
+          </center>
+          <hr />
+          Keyword: <input id="cq-search-input" type="text" />
+          <hr />
+          Year Range:
+          <select id="cq-min-year"></select>
+          to
+          <select id="cq-max-year"></select>
+          <br />
+          <hr />
+          <input id="cq-sold-in-us" name="us-only-filter" type="checkbox" /><label for="us-only-filter">Show Only US
+            Models</label>
+          <br />
+          <hr />
+          Engine Position:
+          <select id="cq-engine-position"></select>
+          <br />
+          <hr />
+          Engine Type:
+          <select id="cq-engine-type"></select>
+          <br />
+          <hr />
+          Engine Cylinders:
+          <select id="cq-min-cylinders"></select>
+          to
+          <select id="cq-max-cylinders"></select>
+          <br />
+          <hr />
+          Engine Power (hp):
+          <input type="text" id="cq-min-power" style="width: 30px" /> to
+          <input type="text" id="cq-max-power" style="width: 30px" /> <br />
+          <hr />
+          Engine Torque (lb-ft):
+          <input type="text" id="cq-min-torque" style="width: 30px" /> to
+          <input type="text" id="cq-max-torque" style="width: 30px" /> <br />
+          <hr />
+          Engine Fuel Type:
+          <select id="cq-fuel-type"></select>
+          <br />
+          <hr />
+          Top Speed (mph):
+          <input type="text" id="cq-min-top-speed" style="width: 30px" /> to
+          <input type="text" id="cq-max-top-speed" style="width: 30px" />
+          <br />
+          <hr />
+          Drivetrain:
+          <select id="cq-drive"></select>
+          <br />
+          <hr />
+          Seats:
+          <select id="cq-seats"></select>
+          <br />
+          <hr />
+          Doors:
+          <select id="cq-doors"></select>
+          <br />
+          <hr />
+          Weight (lbs):
+          <input type="text" id="cq-min-weight" style="width: 30px" /> to
+          <input type="text" id="cq-max-weight" style="width: 30px" />
+        </fieldset>
+      </div>
+      <div style="float: right; width: 50%">
+        <fieldset>
+          <div id="cq-search-results">Search Results:</div>
+        </fieldset>
+      </div>
     </div>
-    <footer></footer>
-    <script src="js/script.js"></script>
-  </body>
+
+    <div id="cq-search-result" style="display: none"></div>
+  </div>
+  <footer></footer>
+  <!-- Script -->
+  <script src="js/script.js"></script>
+  <!-- Script -->
+  <script>
+    const phone = document.getElementById('number');
+    const submitBtn = document.getElementById('submit');
+
+    submitBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      phoneNo = phone.value;
+      let payload = {
+        phoneNumber: phoneNo
+      };
+      let xhr = new XMLHttpRequest();
+      xhr.open('POST', '/');
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      let payloadString = JSON.stringify(payload);
+      console.log(payloadString);
+      xhr.send(payloadString);
+      // phone.value == '' ? submitBtn.disabled = true : submitBtn.disabled = false;
+    });
+  </script>
+</body>
+
 </html>

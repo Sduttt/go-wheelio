@@ -1,7 +1,8 @@
 const express = require("express")
 const app = express();
-const PORT = 3001 || process.env.PORT
-const twilio = require("twilio")
+const bodyParser = require("body-parser");
+const PORT = 3000;
+const twilio = require("twilio");
 
 const accountSid = "AC940a2df0c52e7b1fd038404b2df8dacb"
 const authToken = "2f1c0f9a9afd5b3a5c36ce946f12919e"
@@ -9,7 +10,10 @@ const authToken = "2f1c0f9a9afd5b3a5c36ce946f12919e"
 const client = new twilio(accountSid, authToken);
 
 app.use(express.json());
+app.use( bodyParser.json() );       // to support JSON-encoded bodies
 
+app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+ extended: true})); 
 // Static files
 app.use(express.static("public"));
 app.use('/css', express.static(__dirname + '/public/css'));
@@ -23,10 +27,17 @@ app.set('view engine', 'ejs');
 app.get("/", (req, res) => {
     res.render('index');
 })
+let phoneNumber;
+app.post('/', (req, res) =>{
+    phoneNumber = req.body.phoneNumber;
+    console.log(phoneNumber);
+})
+console.log(phoneNumber);
 
 app.get('/send-text', (req, res) => {
     //Welcome Message
-    res.send('Hello to the Twilio Server')
+    console.log(req);
+    res.send('Hello to the Twilio Server');
 
     //_GET Variables
     // const { textmessage, texternumber, carCompany, floorArea, location } = req.query;
@@ -35,7 +46,7 @@ app.get('/send-text', (req, res) => {
     //Send Text
     client.messages.create({
         body: "YOOO BOIII",
-        to: "+917866023319",  // Text this number
+        to: "+919609628891",  // Text this number
         from: "+19786435240" // From a valid Twilio number
     }).then((message) => console.log(message.body));
 })
