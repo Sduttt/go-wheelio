@@ -4,8 +4,8 @@ const bodyParser = require("body-parser");
 const PORT = 3000;
 const twilio = require("twilio");
 
-const accountSid = "PlaceaccountSid"
-const authToken = "PlaceauthToken"
+const accountSid = "AC2a292bdf20f43814a186b924ab52fxxx"
+const authToken = "f768549b1xxxxxb92635ba5fdf210167"
 
 const client = new twilio(accountSid, authToken);
 
@@ -51,8 +51,8 @@ cohere.init('cohereapikey'); // This is your trial API key
     //Send Text
     client.messages.create({
         body: response.body.generations[0].text,
-        to: "",  // Text this number
-        from: "" // From a valid Twilio number
+        to: "+12563045145",  // Text this number
+        from: "+917997642581" // From a valid Twilio number
     }).then((message) => console.log(message.body));
 })
 
