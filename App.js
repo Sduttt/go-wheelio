@@ -4,8 +4,8 @@ const bodyParser = require("body-parser");
 const PORT = 3000;
 const twilio = require("twilio");
 
-const accountSid = "accountSid"
-const authToken = "authToken"
+const accountSid = "PlaceaccountSid"
+const authToken = "PlaceauthToken"
 
 const client = new twilio(accountSid, authToken);
 
