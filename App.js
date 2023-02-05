@@ -4,8 +4,8 @@ const bodyParser = require("body-parser");
 const PORT = 3000;
 const twilio = require("twilio");
 
-const accountSid = "AC940a2df0c52e7b1fd038404b2df8dacb"
-const authToken = "2f1c0f9a9afd5b3a5c36ce946f12919e"
+const accountSid = "accountSid"
+const authToken = "authToken"
 
 const client = new twilio(accountSid, authToken);
 
@@ -45,9 +45,9 @@ app.get('/send-text', (req, res) => {
 
     //Send Text
     client.messages.create({
-        body: "YOOO BOIII",
-        to: "+918374790680",  // Text this number
-        from: "+19786435240" // From a valid Twilio number
+        body: "I can never "tire" of you",
+        to: "",  // Text this number
+        from: "" // From a valid Twilio number
     }).then((message) => console.log(message.body));
 })
 
