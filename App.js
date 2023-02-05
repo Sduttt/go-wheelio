@@ -46,7 +46,7 @@ app.get('/send-text', (req, res) => {
     //Send Text
     client.messages.create({
         body: "YOOO BOIII",
-        to: "+919609628891",  // Text this number
+        to: "+918374790680",  // Text this number
         from: "+19786435240" // From a valid Twilio number
     }).then((message) => console.log(message.body));
 })
