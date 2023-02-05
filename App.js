@@ -45,7 +45,7 @@ app.get('/send-text', (req, res) => {
 
     //Send Text
     client.messages.create({
-        body: "I can never "tire" of you",
+        body: "I can never *tire* of you",
         to: "",  // Text this number
         from: "" // From a valid Twilio number
     }).then((message) => console.log(message.body));
