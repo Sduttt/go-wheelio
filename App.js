@@ -42,10 +42,15 @@ app.get('/send-text', (req, res) => {
     //_GET Variables
     // const { textmessage, texternumber, carCompany, floorArea, location } = req.query;
 
-
+const cohere = require('cohere-ai');
+cohere.init('cohereapikey'); // This is your trial API key
+(async () => {
+  const response = await cohere.generate({model: 'command-xlarge-nightly',prompt: 'Generate a random comedy line for a car website',max_tokens: 300,temperature: 0.9,k: 0,p: 0.75,frequency_penalty: 0,presence_penalty: 0,stop_sequences: [],return_likelihoods: 'NONE'});;})();
+ 
+ 
     //Send Text
     client.messages.create({
-        body: "I can never *tire* of you",
+        body: response.body.generations[0].text,
         to: "",  // Text this number
         from: "" // From a valid Twilio number
     }).then((message) => console.log(message.body));
